@@ -8,33 +8,11 @@
  * Controller of the memoryGameApp
  */
 angular.module('memoryGameApp')
-  .directive('tmbPlaymat', function() {
+  .directive('tmbPlaymat', function(Cards) {
     return {
       controller: function ($scope) {
-        $scope.cardModels = [
-          {
-            key: 0,
-            pair: 0,
-            state: false
-          },
-          {
-            key: 0,
-            pair: 1,
-            state: false
-          },
-          {
-            key: 1,
-            pair: 0,
-            state: false
-          },
-          {
-            key: 1,
-            pair: 1,
-            state: false
-          }
-        ];
+        $scope.cardModels = Cards.cardModels;
       },
-      replace: true,
       template: ''+
         '<section>'+
           '<h2>Place your 24 memory cards here.</h2>'+

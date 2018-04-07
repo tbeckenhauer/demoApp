@@ -15,6 +15,10 @@ angular.module('memoryGameApp')
         model: '=model'
       },
       replace: true,
-      template: '<label>{{model.state ? model.key : "Down" }}<input type=checkbox ng-model="model.state"></label>'
+      template: ''+
+        '<label>'+
+          '<input type=checkbox ng-model="model.state">'+
+          '{{model.state ? model.key : "Down" }}'+
+        '</label>'
     };
   });
