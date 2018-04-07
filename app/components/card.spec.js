@@ -16,8 +16,7 @@ describe('Directive: card', function () {
     it('Should display the base case with no input', function() {
       var element = $compile("<card></card>")($rootScope);
       $rootScope.$digest();
-      // console.log(element.html());
-      expect(element.html()).toContain("Down");
+      expect(element.html()).toContain("?");
     });
 
     // it('Should contain a clickable checkbox input', function() {
