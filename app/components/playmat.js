@@ -9,7 +9,9 @@
  */
 angular.module('memoryGameApp')
   .directive('tmbPlaymat', function() {
+    console.log('hello');
     return {
+      replace: true,
       template: '<p>Place your 24 memory cards here.</p>'
     };
   });
