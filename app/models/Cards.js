@@ -3,7 +3,7 @@
 angular.module('memoryGameApp')
   .service('Cards', function ($timeout) {
         var self = this;
-        var things = [...Array(24).keys()];
+        var things = [... new Array(24).keys()];
         const cardDown = false;
         const cardUp = true;
         self.cardModels = [];
@@ -22,7 +22,7 @@ angular.module('memoryGameApp')
                     incrementTurnCounter();
                   } else if (userIsOnTurn(1)) {
                     resetTurnCounter();
-                    delay(flipWrongOnesBack)
+                    delay(flipWrongOnesBack);
                   } else if (userIsOnTurn(2)){
                     //keep the card flipped down.
                     s = cardDown;
@@ -36,7 +36,7 @@ angular.module('memoryGameApp')
                 }
                 this.privateState = s;
               },
-            })
+            });
           }
         }
 
@@ -47,10 +47,8 @@ angular.module('memoryGameApp')
           return turnCount === getTheOnesTheUserJustTurnedUp().length;
         }
 
-        var delayedFn;
-        var delayedPromise;
         function delay (fn) {
-          delayedPromise = $timeout(fn, 500);
+          $timeout(fn, 500);
         }
 
         var accessCount;
@@ -66,10 +64,10 @@ angular.module('memoryGameApp')
           if(userSelectedTheRightOnes()) {
             thingsTheUserGotRight.push(
               getTheOnesTheUserJustTurnedUp()[0].key
-            )
+            );
           } else {
             getTheOnesTheUserJustTurnedUp()
-              .forEach(cardModel => cardModel.state = false)
+              .forEach(cardModel => cardModel.state = false);
           }
 
           if(things.length === thingsTheUserGotRight.length) {
@@ -78,15 +76,15 @@ angular.module('memoryGameApp')
         }
         function userSelectedTheRightOnes () {
           return getTheOnesTheUserJustTurnedUp()
-            .reduce((a,b,c) => { return a.key === b.key; });
+            .reduce((a,b) => { return a.key === b.key; });
         }
         var thingsTheUserGotRight = [];
         function getTheOnesTheUserJustTurnedUp () {
           return getTheOnesTurnedUp()
-            .filter(card    => { return ! thingsTheUserGotRight.includes(card.key)})
+            .filter(card    => { return ! thingsTheUserGotRight.includes(card.key);});
         }
         function getTheOnesTurnedUp () {
           return self.cardModels
-            .filter(card    => { return card.state === true})
+            .filter(card    => { return card.state === true;});
         }
   });
