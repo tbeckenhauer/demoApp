@@ -89,3 +89,25 @@ body {
     border-bottom: 0;
   }
 }
+
+.playmat {
+  background-color: gray;
+  ul {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+.card {
+  text-align: center;
+  background-color: brown;
+  margin: 3px;
+  display: block;
+  input[type=checkbox] {
+    display: none;
+  }
+}

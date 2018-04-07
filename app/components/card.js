@@ -16,7 +16,7 @@ angular.module('memoryGameApp')
       },
       replace: true,
       template: ''+
-        '<label>'+
+        '<label class="card">'+
           '<input type=checkbox ng-model="model.state">'+
           '{{model.state ? model.key : "Down" }}'+
         '</label>'

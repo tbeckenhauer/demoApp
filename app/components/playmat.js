@@ -14,7 +14,7 @@ angular.module('memoryGameApp')
         $scope.cardModels = Cards.cardModels;
       },
       template: ''+
-        '<section>'+
+        '<section class="playmat">'+
           '<h2>Place your 24 memory cards here.</h2>'+
           '<ul>'+
             '<li ng-repeat="cardModel in cardModels">'+
