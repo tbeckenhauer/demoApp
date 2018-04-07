@@ -8,10 +8,10 @@
  * Controller of the memoryGameApp
  */
 angular.module('memoryGameApp')
-  .directive('tmbPlaymat', function(Cards) {
+  .directive('tmbPlaymat', function(Cards, Shuffle) {
     return {
       controller: function ($scope) {
-        $scope.cardModels = Cards.cardModels;
+        $scope.cardModels = Shuffle(Cards.cardModels);
       },
       template: ''+
         '<section class="playmat">'+
