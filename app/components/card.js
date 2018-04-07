@@ -10,10 +10,11 @@
 angular.module('memoryGameApp')
   .directive('card', function() {
     return {
-      controller: function ($scope) {
-        $scope.state = 'Down';
+      controller: function ($scope) {},
+      scope: {
+        model: '=model'
       },
       replace: true,
-      template: '<label>{{state}}<input type=checkbox ng-model="state" ng-true-value="\'Up\'" ng-false-value="\'Down\'"></label>'
+      template: '<label>{{model.state ? model.key : "Down" }}<input type=checkbox ng-model="model.state"></label>'
     };
   });
