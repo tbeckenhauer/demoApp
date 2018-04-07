@@ -19,17 +19,14 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/main', {
-        templateUrl: 'pages/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+      .when('/alerts', {
+        templateUrl: 'pages/alerts.html',
+        controller: 'AlertsCtrl',
+        controllerAs: 'alerts'
       })
       .when('/game', {
         templateUrl: 'pages/game.html',
         controller: 'GameCtrl',
         controllerAs: 'game'
-      })
-      .otherwise({
-        redirectTo: '/'
       });
   });
