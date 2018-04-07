@@ -2,5 +2,6 @@
 
 angular.module('memoryGameApp')
   .service('Shuffle', function () {
-    return window.knuthShuffle;
+    this.knuth = window.knuthShuffle;
+    delete window.knuthShuffle;
   });

@@ -11,7 +11,7 @@ angular.module('memoryGameApp')
   .directive('tmbPlaymat', function(Cards, Shuffle) {
     return {
       controller: function ($scope) {
-        $scope.cardModels = Shuffle(Cards.cardModels);
+        $scope.cardModels = Shuffle.knuth(Cards.cardModels);
       },
       template: ''+
         '<section class="playmat">'+

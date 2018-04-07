@@ -10,7 +10,7 @@
 angular.module('memoryGameApp')
   .directive('card', function() {
     return {
-      controller: function ($scope) {},
+      controller: function () {},
       scope: {
         model: '=model'
       },
