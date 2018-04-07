@@ -16,9 +16,9 @@ angular.module('memoryGameApp')
       },
       replace: true,
       template: ''+
-        '<label class="card">'+
+        '<label class="card" style="--aspect-ratio: 1/1;">'+
           '<input type=checkbox ng-model="model.state">'+
-          '{{model.state ? model.key : "Down" }}'+
+          '{{model.state ? model.key : "?" }}'+
         '</label>'
     };
   });

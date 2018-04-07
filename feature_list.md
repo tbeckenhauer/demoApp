@@ -8,19 +8,20 @@ Completed
     i. flip those cards back.
   c. prevent completed cards from being flipped back down.
   d. prevent user from flipping cards over too fast
+4. improve styling of cards
+5. add ability to play with 24 cards
 
 In Progress
-4. improve on styling of cards
-  a. https://daneden.github.io/animate.css/
-  b. https://ianlunn.github.io/Hover/
-5. add ability to play with 24 cards
 6. shuffle the cards
   a. [The Fisher-Yates Shuffle](https://stackoverflow.com/a/2450976/298240)
-7. restore <!-- TODO <li class="active"></li> -->
-8. swap out phantomJs for headless chrome
+7. improve transition on cards
+  a. https://daneden.github.io/animate.css/
+  b. https://ianlunn.github.io/Hover/
+8. restore <!-- TODO <li class="active"></li> -->
+9. swap out phantomJs for headless chrome
   a. stops us from using es6
-9. install html preprocessor so templateUrls are loaded beforehand
+10. install html preprocessor so templateUrls are loaded beforehand
   a. https://github.com/karma-runner/karma-ng-html2js-preprocessor
   b. unit testing difficult with http requests being fired for html documents
-10. Refactor Cards Service.
+11. Refactor Cards Service.
   a. CardFactory and CardList
