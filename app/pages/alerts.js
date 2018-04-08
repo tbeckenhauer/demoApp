@@ -16,7 +16,7 @@ angular.module('memoryGameApp')
     $scope.gridOptions = {
       enableFiltering: true,
 
-      expandableRowTemplate: 'pages/alertsDetail.html',
+      expandableRowTemplate: '<div id="mapcontainer"/>',
       expandableRowHeight: 200,
       onRegisterApi: function (gridApi) {
           gridApi.expandable.on.rowExpandedStateChanged($scope, function (row) {
