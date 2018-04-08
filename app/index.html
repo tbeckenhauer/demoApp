@@ -13,6 +13,7 @@
     <!-- build:css(.tmp) styles/main.scss -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link rel="styleSheet" href="bower_components/angular-ui-grid/ui-grid.min.css"/>
   </head>
   <body ng-app="memoryGameApp">
     <!--[if lte IE 8]>
@@ -32,13 +33,12 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">memoryGame</a>
+            <a class="navbar-brand" href="#!/game">Demo Application</a>
           </div>
 
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li><a href="#!/main">Home</a></li>
               <li><a ng-href="#!/game">Game</a></li>
               <li><a ng-href="#!/alerts">Alerts</a></li>
             </ul>
@@ -82,8 +82,9 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <!-- endbower -->
     <script src="bower_components/knuth-shuffle/index.js"></script>
-    <link rel="styleSheet" href="bower_components/angular-ui-grid/ui-grid.min.css"/>
     <script src="bower_components/angular-ui-grid/ui-grid.min.js"></script>
+    <script src="bower_components/highcharts/highmaps.js"></script>
+    <script src="bower_components/highcharts/mapdata/custom/world.js"></script>
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts.js -->
@@ -91,6 +92,7 @@
         <script src="models/Cards.js"></script>
         <script src="models/Alerts.js"></script>
         <script src="models/Shuffle.js"></script>
+        <script src="models/Highcharts.js"></script>
         <script src="components/playmat.js"></script>
         <script src="components/card.js"></script>
         <script src="pages/alerts.js"></script>

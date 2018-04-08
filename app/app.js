@@ -29,5 +29,8 @@ angular
         templateUrl: 'pages/game.html',
         controller: 'GameCtrl',
         controllerAs: 'game'
+      })
+      .when('/',{
+        redirect: '/game'
       });
   });

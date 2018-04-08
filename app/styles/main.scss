@@ -67,10 +67,14 @@ body {
   }
 }
 
+body > .container {
+  height: calc(100vh - 70px - 83px);
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 1030px;
   }
 
   /* Remove the padding we set earlier */
@@ -145,4 +149,17 @@ body {
     flex-grow: 3;
 
   }
+}
+
+#mapcontainer {
+    height: 200px;
+    min-width: 210px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
 }

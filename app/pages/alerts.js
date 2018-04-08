@@ -8,18 +8,53 @@
  * Controller of the memoryGameApp
  */
 angular.module('memoryGameApp')
-  .controller('AlertsCtrl', function ($scope, Alerts, uiGridConstants) {
-    $scope.doThisThing = function (filterKey, filterValue) {
-      // console.log(
+  .controller('AlertsCtrl', function ($scope, Alerts, uiGridConstants, $timeout, Highcharts) {
+    $scope.filterrows = function (filterKey, filterValue) {
         $scope.gridOptions.columnDefs
-          .find(col => col.name === filterKey).filter.term = filterValue
-      // );
-    }
+          .find(col => col.name === filterKey).filter.term = filterValue;
+    };
     $scope.gridOptions = {
       enableFiltering: true,
 
       expandableRowTemplate: 'pages/alertsDetail.html',
       expandableRowHeight: 200,
+      onRegisterApi: function (gridApi) {
+          gridApi.expandable.on.rowExpandedStateChanged($scope, function (row) {
+              if (row.isExpanded) {
+                  $timeout(function () {
+                    new Highcharts.Map('mapcontainer', {
+                      title : {
+                          text : 'Alerts By Country'
+                      },
+                      series : [{
+                        mapData: Highcharts.maps['custom/world'],
+                        data: Object.keys($scope.alertCounter.ClientCountry).map(key => {
+                          var hcKeyMap= {
+                            'United States': 'us',
+                            'Canada': 'ca',
+                            'Germany': 'de',
+                            'Australia': 'au'
+                          };
+                          return {
+                            'hc-key': hcKeyMap[key],
+                            'value': $scope.alertCounter.ClientCountry[key],
+                          };
+                        }),
+                        joinBy: 'hc-key',
+                        name: 'Number of alerts',
+                        dataLabels: {
+                            enabled: true,
+                            formatter: function () {
+                                // Access the hc-key property of this point
+                                return this.point['hc-key'];
+                            }
+                        }
+                    }]
+                    });
+                  });
+              }
+          });
+      },
 
       columnDefs : [
         { name: 'AlertTime'    , filter: {} },
@@ -34,6 +69,7 @@ angular.module('memoryGameApp')
         { name: 'ClientCountry', filter: {} }
       ]
     };
+
     Alerts.then(
       response => {
         $scope.gridOptions.data = response.data;
@@ -47,6 +83,7 @@ angular.module('memoryGameApp')
           });
           return acc;
         }, {Severity: {}});
+        console.log($scope.thing);
       },
       console.error,
       console.info
