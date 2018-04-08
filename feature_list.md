@@ -18,18 +18,19 @@ Completed
 09. Show some stats by analyzing the data
 10. Clicking on a stat/filter item will filter the list view
 11. Provide visualizations based on the data
+12. Standup on public server.
 
 In Progress
-12. Pagination for the list view
-13. Unit Tests
-14. improve transition on cards
+13. Pagination for the list view
+14. Unit Tests
+15. improve transition on cards
   a. https://daneden.github.io/animate.css/
   b. https://ianlunn.github.io/Hover/
-15. restore <!-- TODO <li class="active"></li> -->
-16. swap out phantomJs for headless chrome
+16. restore <!-- TODO <li class="active"></li> -->
+17. swap out phantomJs for headless chrome
   a. stops us from using es6
-17. install html preprocessor so templateUrls are loaded beforehand
+18. install html preprocessor so templateUrls are loaded beforehand
   a. https://github.com/karma-runner/karma-ng-html2js-preprocessor
   b. unit testing difficult with http requests being fired for html documents
-18. Refactor Cards Service.
+19. Refactor Cards Service.
   a. CardFactory and CardList
