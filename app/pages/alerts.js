@@ -27,6 +27,16 @@ angular.module('memoryGameApp')
     Alerts.then(
       response => {
         $scope.gridOptions.data = response.data;
+        $scope.alertCounter = response.data.reduce((acc, curr) => {
+        Object.keys(curr)
+            .filter(key => ! ['AlertId', 'AlertTime', 'ServerIP'].includes(key) )
+            .forEach((key) => {
+              acc[key] = acc[key] || {};
+              acc[key][curr[key]] = acc[key][curr[key]] || 0;
+              acc[key][curr[key]]++;
+          });
+          return acc;
+        }, {Severity: {}});
       },
       console.error,
       console.info

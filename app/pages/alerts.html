@@ -1,1 +1,17 @@
-<ol><li ui-grid="gridOptions" ui-grid-expandable></li></ol>
+<section class="alertspage">
+  <nav class="filters">
+    <ul>
+      <li ng-repeat="(key, value) in alertCounter">
+        {{key}}
+        <ul>
+          <li ng-repeat="(k, v) in value">
+            {{k}}: {{v}}
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <ol class="grid">
+    <li ui-grid="gridOptions" ui-grid-expandable></li>
+  </ol>
+</section>
