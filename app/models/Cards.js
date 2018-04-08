@@ -8,7 +8,7 @@
  */
 angular.module("memoryGameApp").service("Cards", function($timeout) {
   var self = this;
-  var things = [...new Array(24).keys()];
+  var things = [...new Array(12).keys()];
   const cardDown = false;
   const cardUp = true;
   self.cardModels = [];
