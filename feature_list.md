@@ -20,17 +20,28 @@ Completed
 11. Provide visualizations based on the data
 12. Standup on public server.
 
-In Progress
-13. Pagination for the list view
-14. Unit Tests
-15. improve transition on cards
-  a. https://daneden.github.io/animate.css/
-  b. https://ianlunn.github.io/Hover/
-16. restore <!-- TODO <li class="active"></li> -->
-17. swap out phantomJs for headless chrome
-  a. stops us from using es6
-18. install html preprocessor so templateUrls are loaded beforehand
-  a. https://github.com/karma-runner/karma-ng-html2js-preprocessor
-  b. unit testing difficult with http requests being fired for html documents
-19. Refactor Cards Service.
-  a. CardFactory and CardList
+To Be Completed
+- Add doc header to Alerts
+- Move Alerts Model logic into Alerts.js
+- cleanup cards logic
+- Move Highcharts and Shuffle into a dependency path.
+- Break main.scss into modules & pages
+- Use semantic nav tags for header, footer, section, and navigation
+- Move view logic in AlertsCtrl into a list/details directive
+- Refactor out the Counter logic to make a general purpose counter.
+- Rename app module to DemoApp
+- Unit Tests
+  - Find out why unit tests are broken.
+- Pagination for the list view
+- improve transition on cards
+  - https://daneden.github.io/animate.css/
+  - https://ianlunn.github.io/Hover/
+- restore <!-- TODO <li class="active"></li> -->
+- swap out phantomJs for headless chrome
+  - stops us from using es6
+- install html preprocessor so templateUrls are loaded beforehand
+  - https://github.com/karma-runner/karma-ng-html2js-preprocessor
+  - unit testing difficult with http requests being fired for html documents
+- Refactor Cards Service.
+  - CardFactory and CardList
+- Google analytics

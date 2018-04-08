@@ -4,8 +4,6 @@
  * @ngdoc overview
  * @name memoryGameApp
  * @description
- * # memoryGameApp
- *
  * Main module of the application.
  */
 angular
@@ -16,7 +14,10 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ui.grid', 'ui.grid.expandable', 'ui.grid.selection', 'ui.grid.pinning'
+    'ui.grid',
+    'ui.grid.expandable',
+    'ui.grid.selection',
+    'ui.grid.pinning'
   ])
   .config(function ($routeProvider) {
     $routeProvider

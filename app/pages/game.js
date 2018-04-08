@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc function
- * @name memoryGameApp.controller:AboutCtrl
+ * @name memoryGameApp.controller:GameCtrl
  * @description
- * # AboutCtrl
- * Controller of the memoryGameApp
+ * # GameCtrl
+ * GameCtrl of the memoryGameApp
  */
 angular.module('memoryGameApp')
   .controller('GameCtrl', function () {

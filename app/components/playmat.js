@@ -2,7 +2,7 @@
 
 /**
  * @ngdoc function
- * @name memoryGameApp.controller:AboutCtrl
+ * @name memoryGameApp.directive:tmbPlaymat
  * @description
  * # AboutCtrl
  * Controller of the memoryGameApp
