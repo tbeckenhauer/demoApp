@@ -19,8 +19,11 @@ Completed
 10. Clicking on a stat/filter item will filter the list view
 11. Provide visualizations based on the data
 12. Standup on public server.
-- Add doc header to Alerts
-- Move Alerts Model logic into Alerts.js
+13. Add doc header to Alerts
+14. Move Alerts Model logic into Alerts.js
+15. improve transition on cards
+  - https://daneden.github.io/animate.css/
+  - https://ianlunn.github.io/Hover/
 
 To Be Completed
 - cleanup cards logic
@@ -33,9 +36,6 @@ To Be Completed
 - Unit Tests
   - Find out why unit tests are broken.
 - Pagination for the list view
-- improve transition on cards
-  - https://daneden.github.io/animate.css/
-  - https://ianlunn.github.io/Hover/
 - restore <!-- TODO <li class="active"></li> -->
 - swap out phantomJs for headless chrome
   - stops us from using es6
