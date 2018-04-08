@@ -5,7 +5,7 @@
         {{key}}
         <ul>
           <li ng-repeat="(k, v) in value">
-            {{k}}: {{v}}
+            <a ng-click="doThisThing(key, k)">{{k}}: {{v}}</a>
           </li>
         </ul>
       </li>

@@ -16,9 +16,9 @@ Completed
 08. Clicking on a row will select an alert and display a detail view
  a. add ui-grid.
 09. Show some stats by analyzing the data
+10. Clicking on a stat/filter item will filter the list view
 
 In Progress
-10. Clicking on a stat/filter item will filter the list view
 11. Pagination for the list view
 12. Provide visualizations based on the data
 13. Unit Tests

@@ -8,7 +8,13 @@
  * Controller of the memoryGameApp
  */
 angular.module('memoryGameApp')
-  .controller('AlertsCtrl', function ($scope, Alerts) {
+  .controller('AlertsCtrl', function ($scope, Alerts, uiGridConstants) {
+    $scope.doThisThing = function (filterKey, filterValue) {
+      // console.log(
+        $scope.gridOptions.columnDefs
+          .find(col => col.name === filterKey).filter.term = filterValue
+      // );
+    }
     $scope.gridOptions = {
       enableFiltering: true,
 
@@ -16,12 +22,16 @@ angular.module('memoryGameApp')
       expandableRowHeight: 200,
 
       columnDefs : [
-        { name: 'AlertId',      },
-        { name: 'AlertTime'     },
-        { name: 'Severity'      },
-        { name: 'ClientIP'      },
-        { name: 'Protocol'      },
-        { name: 'ClientCountry' }
+        { name: 'AlertTime'    , filter: {} },
+        { name: 'Severity'     , filter: {
+            type: uiGridConstants.filter.SELECT,
+            selectOptions: [  { value: 'Low',    label: 'Low'    },
+                              { value: 'Medium', label: 'Medium' },
+                              { value: 'High',   label: 'High'   }]}
+        },
+        { name: 'ClientIP'     , filter: {} },
+        { name: 'Protocol'     , filter: {} },
+        { name: 'ClientCountry', filter: {} }
       ]
     };
     Alerts.then(
