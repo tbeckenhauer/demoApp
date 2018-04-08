@@ -19,10 +19,10 @@ Completed
 10. Clicking on a stat/filter item will filter the list view
 11. Provide visualizations based on the data
 12. Standup on public server.
-
-To Be Completed
 - Add doc header to Alerts
 - Move Alerts Model logic into Alerts.js
+
+To Be Completed
 - cleanup cards logic
 - Move Highcharts and Shuffle into a dependency path.
 - Break main.scss into modules & pages
