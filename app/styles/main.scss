@@ -95,6 +95,9 @@ body > .container {
 }
 
 .playmat {
+  h2 {
+    display: inline-block;
+  }
   background-color: gray;
   ul {
     padding: 0;
