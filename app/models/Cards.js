@@ -27,7 +27,7 @@ angular.module("memoryGameApp").service("Cards", function($timeout) {
               incrementTurnCounter();
             } else if (userIsOnTurn(1)) {
               resetTurnCounter();
-              delay(flipWrongOnesBack);
+              delay(checkForWinCondition);
             } else if (userIsOnTurn(2)) {
               //keep the card flipped down.
               s = cardDown;
@@ -52,7 +52,7 @@ angular.module("memoryGameApp").service("Cards", function($timeout) {
   }
 
   function delay(fn) {
-    $timeout(fn, 500);
+    $timeout(fn, 1100);
   }
 
   var accessCount;
@@ -64,12 +64,22 @@ angular.module("memoryGameApp").service("Cards", function($timeout) {
     accessCount = accessCount + 1;
   }
 
-  function flipWrongOnesBack() {
+  function checkForWinCondition() {
     if (userSelectedTheRightOnes()) {
+      getTheOnesTheUserJustTurnedUp().forEach(
+        cardModel => {
+          cardModel.right = true;
+          $timeout(() => cardModel.right = false, 900)
+        }
+      );
       thingsTheUserGotRight.push(getTheOnesTheUserJustTurnedUp()[0].key);
     } else {
       getTheOnesTheUserJustTurnedUp().forEach(
-        cardModel => (cardModel.state = false)
+        cardModel => {
+          cardModel.wrong = true;
+          $timeout(() => cardModel.wrong = false, 900)
+          cardModel.state = false;
+        }
       );
     }
 
