@@ -32,6 +32,6 @@ angular
         controllerAs: 'game'
       })
       .when('/',{
-        redirect: '/game'
+        redirectTo: '/game'
       });
   });

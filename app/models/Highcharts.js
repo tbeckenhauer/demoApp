@@ -1,5 +1,11 @@
 'use strict';
 
+/**
+ * @ngdoc function
+ * @name memoryGameApp.service:Highcharts
+ * @description
+ * Servics that wraps Highcharts in an AngularJs Service
+ */
 angular.module('memoryGameApp')
   .service('Highcharts', function () {
     var Highcharts = window.Highcharts;

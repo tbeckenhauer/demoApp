@@ -2,10 +2,9 @@
 
 /**
  * @ngdoc function
- * @name memoryGameApp.controller:AboutCtrl
+ * @name memoryGameApp.controller:AlertsCtrl
  * @description
- * # AboutCtrl
- * Controller of the memoryGameApp
+ * Alerts Controller of the memoryGameApp
  */
 angular.module('memoryGameApp')
   .controller('AlertsCtrl', function ($scope, Alerts, uiGridConstants, $timeout, Highcharts) {

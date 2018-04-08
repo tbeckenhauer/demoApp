@@ -1,5 +1,11 @@
 'use strict';
 
+/**
+ * @ngdoc function
+ * @name memoryGameApp.service:Cards
+ * @description
+ * Servics that fetchs the cards
+ */
 angular.module('memoryGameApp')
   .service('Cards', function ($timeout) {
         var self = this;
