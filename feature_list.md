@@ -17,10 +17,10 @@ Completed
  a. add ui-grid.
 09. Show some stats by analyzing the data
 10. Clicking on a stat/filter item will filter the list view
+11. Provide visualizations based on the data
 
 In Progress
-11. Pagination for the list view
-12. Provide visualizations based on the data
+12. Pagination for the list view
 13. Unit Tests
 14. improve transition on cards
   a. https://daneden.github.io/animate.css/
