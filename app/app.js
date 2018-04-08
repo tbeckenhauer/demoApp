@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.grid', 'ui.grid.expandable', 'ui.grid.selection', 'ui.grid.pinning'
   ])
   .config(function ($routeProvider) {
     $routeProvider

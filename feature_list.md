@@ -12,13 +12,13 @@ Completed
 05. add ability to play with 24 cards
 06. shuffle the cards
   a. [The Fisher-Yates Shuffle](https://stackoverflow.com/a/2450976/298240)
+07. Provide a search box to quickly filter the list
+08. Clicking on a row will select an alert and display a detail view
+ a. add ui-grid.
+10. Clicking on a stat/filter item will filter the list view
 
 In Progress
-07. Clicking on a row will select an alert and display a detail view
- a. add ui-grid.
-08. Show some stats by analyzing the data
-09. Provide a search box to quickly filter the list
-10. Clicking on a stat/filter item will filter the list view
+09. Show some stats by analyzing the data
 11. Pagination for the list view
 12. Provide visualizations based on the data
 13. Unit Tests
