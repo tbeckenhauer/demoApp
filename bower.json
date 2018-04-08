@@ -9,9 +9,7 @@
     "angular-resource": "^1.4.0",
     "angular-route": "^1.4.0",
     "angular-sanitize": "^1.4.0",
-    "angular-touch": "^1.4.0"
-  },
-  "devDependencies": {
+    "angular-touch": "^1.4.0",
     "angular-mocks": "^1.4.0",
     "knuth-shuffle": "^1.0.1",
     "angular-ui-grid": "^4.4.6",
@@ -21,6 +19,15 @@
   "appPath": "app",
   "moduleName": "memoryGameApp",
   "overrides": {
+    "highmaps-map-collection": {
+      "main": "mapdata/custom/world/world.js"
+    },
+    "knuth-shuffle": {
+      "main": "index.js"
+    },
+    "highcharts": {
+      "main": "highmaps.js"
+    },
     "bootstrap": {
       "main": [
         "less/bootstrap.less",
