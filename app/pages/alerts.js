@@ -12,8 +12,6 @@ angular.module('memoryGameApp')
     $scope.gridOptions = {
       enableFiltering: true,
 
-      enableRowSelection: true,
-
       expandableRowTemplate: 'pages/alertsDetail.html',
       expandableRowHeight: 200,
 
