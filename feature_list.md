@@ -24,6 +24,8 @@ Completed
 15. improve transition on cards
   - https://daneden.github.io/animate.css/
   - https://ianlunn.github.io/Hover/
+- swap out phantomJs for headless chrome
+  - stops us from using es6
 
 To Be Completed
 - cleanup cards logic
@@ -37,8 +39,6 @@ To Be Completed
   - Find out why unit tests are broken.
 - Pagination for the list view
 - restore <!-- TODO <li class="active"></li> -->
-- swap out phantomJs for headless chrome
-  - stops us from using es6
 - install html preprocessor so templateUrls are loaded beforehand
   - https://github.com/karma-runner/karma-ng-html2js-preprocessor
   - unit testing difficult with http requests being fired for html documents
