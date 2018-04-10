@@ -26,6 +26,8 @@ Completed
   - https://ianlunn.github.io/Hover/
 - swap out phantomJs for headless chrome
   - stops us from using es6
+- Unit Tests
+  - Find out why unit tests are broken.
 
 To Be Completed
 - cleanup cards logic
@@ -35,8 +37,6 @@ To Be Completed
 - Move view logic in AlertsCtrl into a list/details directive
 - Refactor out the Counter logic to make a general purpose counter.
 - Rename app module to DemoApp
-- Unit Tests
-  - Find out why unit tests are broken.
 - Pagination for the list view
 - restore <!-- TODO <li class="active"></li> -->
 - install html preprocessor so templateUrls are loaded beforehand

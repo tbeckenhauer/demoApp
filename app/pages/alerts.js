@@ -20,15 +20,18 @@ angular
       $scope.addMapWithCounter(response.counter);
       $scope.gridOptions.data = response.data;
       $scope.gridOptions.data.forEach(entry => {
-        entry.subGridOptions = {};
-        // omit subGridOptions to avoid circular reference
-        let { subGridOptions, ...parent } = entry;
-        entry.subGridOptions.data = [parent];
-        entry.subGridOptions.columnDefs = [
-          { name: "AlertId" },
-          { name: "AlertTime" },
-          { name: "ServerIP" },
-        ];
+        entry.subGridOptions = {
+          data: [{
+            AlertId: entry.AlertId,
+            AlertTime: entry.AlertTime,
+            ServerIP: entry.ServerIP
+          }],
+          columnDefs: [
+            { name: "AlertId" },
+            { name: "AlertTime" },
+            { name: "ServerIP" },
+          ]
+        };
       });
     });
 

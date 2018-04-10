@@ -27,7 +27,7 @@ angular
         controllerAs: 'alerts'
       })
       .when('/game', {
-        templateUrl: 'pages/game.html',
+        template: '<tmb-playmat></tmb-playmat>',
         controller: 'GameCtrl',
         controllerAs: 'game'
       })
