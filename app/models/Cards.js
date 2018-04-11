@@ -69,7 +69,7 @@ angular.module("demoApp").service("Cards", function($timeout) {
       getTheOnesTheUserJustTurnedUp().forEach(
         cardModel => {
           cardModel.right = true;
-          $timeout(() => cardModel.right = false, 900)
+          $timeout(() => cardModel.right = false, 900);
         }
       );
       thingsTheUserGotRight.push(getTheOnesTheUserJustTurnedUp()[0].key);
@@ -77,7 +77,7 @@ angular.module("demoApp").service("Cards", function($timeout) {
       getTheOnesTheUserJustTurnedUp().forEach(
         cardModel => {
           cardModel.wrong = true;
-          $timeout(() => cardModel.wrong = false, 900)
+          $timeout(() => cardModel.wrong = false, 900);
           cardModel.state = false;
         }
       );
