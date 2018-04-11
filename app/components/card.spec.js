@@ -3,7 +3,7 @@
 describe('Directive: card', function () {
 
   // load the controller's module
-  beforeEach(module('memoryGameApp'));
+  beforeEach(module('demoApp'));
 
     var $compile,
         $rootScope;

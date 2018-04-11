@@ -3,7 +3,7 @@
 describe('Directive: tmbPlaymat', function () {
 
   // load the controller's module
-  beforeEach(module('memoryGameApp'));
+  beforeEach(module('demoApp'));
 
     var $compile,
         $rootScope;

@@ -17,7 +17,7 @@
     "highmaps-map-collection": "https://github.com/doshprompt/highmaps-map-collection.git"
   },
   "appPath": "app",
-  "moduleName": "memoryGameApp",
+  "moduleName": "demoApp",
   "overrides": {
     "highmaps-map-collection": {
       "main": "mapdata/custom/world/world.js"

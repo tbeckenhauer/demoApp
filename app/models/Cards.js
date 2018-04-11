@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc function
- * @name memoryGameApp.service:Cards
+ * @name demoApp.service:Cards
  * @description
  * Servics that fetchs the cards
  */
-angular.module("memoryGameApp").service("Cards", function($timeout) {
+angular.module("demoApp").service("Cards", function($timeout) {
   var self = this;
   var things = [...new Array(12).keys()];
   const cardDown = false;

@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name memoryGameApp.directive:card
+ * @name demoApp.directive:card
  * @description
  * # card
  * directive/component that will represent an individual card.
  */
-angular.module('memoryGameApp')
+angular.module('demoApp')
   .directive('card', function() {
     return {
       controller: function () {},

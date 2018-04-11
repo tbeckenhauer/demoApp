@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc function
- * @name memoryGameApp.service:Alerts
+ * @name demoApp.service:Alerts
  * @description
  * Servics that fetchs the alerts
  */
-angular.module("memoryGameApp").service("Alerts", function($http) {
+angular.module("demoApp").service("Alerts", function($http) {
   return $http.get("models/alerts.json").then(
     response => {
       return {

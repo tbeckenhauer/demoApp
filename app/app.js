@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc overview
- * @name memoryGameApp
+ * @name demoApp
  * @description
  * Main module of the application.
  */
 angular
-  .module('memoryGameApp', [
+  .module('demoApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

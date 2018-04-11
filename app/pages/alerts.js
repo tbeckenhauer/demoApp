@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name memoryGameApp.controller:AlertsCtrl
+ * @name demoApp.controller:AlertsCtrl
  * @description
- * Alerts Controller of the memoryGameApp
+ * Alerts Controller of the demoApp
  */
 angular
-  .module("memoryGameApp")
+  .module("demoApp")
   .controller("AlertsCtrl", function(
     $scope,
     Alerts,

@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc function
- * @name memoryGameApp.service:Shuffle
+ * @name demoApp.service:Shuffle
  * @description
  * Servics that wraps the knuthShuffle in an AngularJs Service
  */
-angular.module('memoryGameApp')
+angular.module('demoApp')
   .service('Shuffle', function () {
     this.knuth = window.knuthShuffle;
     delete window.knuthShuffle;

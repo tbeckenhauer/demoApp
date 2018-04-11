@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc function
- * @name memoryGameApp.controller:GameCtrl
+ * @name demoApp.controller:GameCtrl
  * @description
  * # GameCtrl
- * GameCtrl of the memoryGameApp
+ * GameCtrl of the demoApp
  */
-angular.module("memoryGameApp").controller("GameCtrl", function() {});
+angular.module("demoApp").controller("GameCtrl", function() {});

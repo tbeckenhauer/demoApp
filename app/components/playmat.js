@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name memoryGameApp.directive:tmbPlaymat
+ * @name demoApp.directive:tmbPlaymat
  * @description
  * # AboutCtrl
- * Controller of the memoryGameApp
+ * Controller of the demoApp
  */
-angular.module('memoryGameApp')
+angular.module('demoApp')
   .directive('tmbPlaymat', function(Cards, Shuffle) {
     return {
       controller: function ($scope) {

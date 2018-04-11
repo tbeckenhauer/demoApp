@@ -29,6 +29,7 @@ Completed
 - Unit Tests
   - Find out why unit tests are broken.
 - Break main.scss into modules & pages
+- Rename app module to DemoApp
 
 To Be Completed
 - fix grunt build process to automatically concat and wire dependencies
@@ -37,7 +38,6 @@ To Be Completed
 - Use semantic nav tags for header, footer, section, and navigation
 - Move view logic in AlertsCtrl into a list/details directive
 - Refactor out the Counter logic to make a general purpose counter.
-- Rename app module to DemoApp
 - Pagination for the list view
 - restore <!-- TODO <li class="active"></li> -->
 - install html preprocessor so templateUrls are loaded beforehand
