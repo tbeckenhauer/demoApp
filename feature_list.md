@@ -28,11 +28,12 @@ Completed
   - stops us from using es6
 - Unit Tests
   - Find out why unit tests are broken.
+- Break main.scss into modules & pages
 
 To Be Completed
+- fix grunt build process to automatically concat and wire dependencies
 - cleanup cards logic
 - Move Highcharts and Shuffle into a dependency path.
-- Break main.scss into modules & pages
 - Use semantic nav tags for header, footer, section, and navigation
 - Move view logic in AlertsCtrl into a list/details directive
 - Refactor out the Counter logic to make a general purpose counter.

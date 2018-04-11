@@ -1,0 +1,24 @@
+#mapcontainer {
+    height: 300px;
+    min-width: 210px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.alertspage {
+  display: flex;
+  flex-direction: row;
+  .filters {
+    flex-grow: 1;
+    li {
+      list-style: none;
+      white-space: nowrap;
+    }
+    ul, ol {
+      padding: 20;
+    }
+  }
+  .grid {
+    flex-grow: 3;
+  }
+}
