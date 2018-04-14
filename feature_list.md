@@ -32,6 +32,9 @@ Completed
 - Rename app module to DemoApp
 
 To Be Completed
+- install html preprocessor so templateUrls are loaded beforehand
+  - https://github.com/karma-runner/karma-ng-html2js-preprocessor
+  - unit testing difficult with http requests being fired for html documents
 - fix grunt build process to automatically concat and wire dependencies
 - cleanup cards logic
 - Move Highcharts and Shuffle into a dependency path.
@@ -40,9 +43,6 @@ To Be Completed
 - Refactor out the Counter logic to make a general purpose counter.
 - Pagination for the list view
 - restore <!-- TODO <li class="active"></li> -->
-- install html preprocessor so templateUrls are loaded beforehand
-  - https://github.com/karma-runner/karma-ng-html2js-preprocessor
-  - unit testing difficult with http requests being fired for html documents
 - Refactor Cards Service.
   - CardFactory and CardList
 - Google analytics

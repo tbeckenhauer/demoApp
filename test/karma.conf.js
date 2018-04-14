@@ -35,7 +35,8 @@ module.exports = function(config) {
       'bower_components/highcharts/highmaps.js',
       'bower_components/highmaps-map-collection/mapdata/custom/world/world.js',
       // endbower
-      'app/**/*.js'
+      'app/index.js',
+      'app/**/*.js',
     ],
 
     // list of files / patterns to exclude
