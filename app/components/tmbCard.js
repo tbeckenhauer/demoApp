@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name demoApp.directive:card
+ * @name demoApp.directive:tmbCard
  * @description
- * # card
+ * # tmbCard
  * directive/component that will represent an individual card.
  */
 angular.module('demoApp')
-  .directive('card', function() {
+  .directive('tmbCard', function() {
     return {
       controller: function () {},
       scope: {
@@ -16,7 +16,7 @@ angular.module('demoApp')
       },
       replace: true,
       template: ''+
-          '<label class="card" ng-class="{wrong: model.wrong, right: model.right}" style="--aspect-ratio: 99/160;">'+
+          '<label class="tmbCard" ng-class="{wrong: model.wrong, right: model.right}" style="--aspect-ratio: 99/160;">'+
             '<input type=checkbox ng-model="model.state">'+
 
             '<div class="slide faceup" ng-if="model.state">{{model.key}}</div>'+

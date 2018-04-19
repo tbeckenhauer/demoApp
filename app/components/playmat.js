@@ -18,7 +18,7 @@ angular.module('demoApp')
           '<h2>Place your 24 memory cards here.</h2>'+
           '<ul>'+
             '<li ng-repeat="cardModel in cardModels">'+
-              '<card model=cardModel></card>'+
+              '<tmb-card model=cardModel></tmb-card>'+
             '</li>'+
           '</ul>'+
         '</section>'

@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Directive: card', function () {
+describe('Directive: tmbCard', function () {
 
   // load the controller's module
   beforeEach(module('demoApp'));
@@ -14,7 +14,7 @@ describe('Directive: card', function () {
     }));
 
     it('Should display the base case with no input', function() {
-      var element = $compile('<card></card>')($rootScope);
+      var element = $compile('<tmb-card></tmb-card>')($rootScope);
       $rootScope.$digest();
       expect(element.html()).toContain('?');
     });
