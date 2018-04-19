@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * @ngdoc function
@@ -7,8 +7,8 @@
  * Alerts Controller of the demoApp
  */
 angular
-  .module("demoApp")
-  .controller("AlertsCtrl", function(
+  .module('demoApp')
+  .controller('AlertsCtrl', function(
     $scope,
     Alerts,
     uiGridConstants,
@@ -27,9 +27,9 @@ angular
             ServerIP: entry.ServerIP
           }],
           columnDefs: [
-            { name: "AlertId" },
-            { name: "AlertTime" },
-            { name: "ServerIP" },
+            { name: 'AlertId' },
+            { name: 'AlertTime' },
+            { name: 'ServerIP' },
           ]
         };
       });
@@ -42,32 +42,32 @@ angular
     };
 
     $scope.addMapWithCounter = function(counter) {
-      new Highcharts.Map("mapcontainer", {
+      new Highcharts.Map('mapcontainer', {
         title: {
-          text: "Alerts By Country"
+          text: 'Alerts By Country'
         },
         series: [
           {
-            mapData: Highcharts.maps["custom/world"],
+            mapData: Highcharts.maps['custom/world'],
             data: Object.keys(counter.ClientCountry).map(key => {
               var hcKeyMap = {
-                "United States": "us",
-                Canada: "ca",
-                Germany: "de",
-                Australia: "au"
+                'United States': 'us',
+                Canada: 'ca',
+                Germany: 'de',
+                Australia: 'au'
               };
               return {
-                "hc-key": hcKeyMap[key],
+                'hc-key': hcKeyMap[key],
                 value: counter.ClientCountry[key]
               };
             }),
-            joinBy: "hc-key",
-            name: "Number of alerts",
+            joinBy: 'hc-key',
+            name: 'Number of alerts',
             dataLabels: {
               enabled: true,
               formatter: function() {
                 // Access the hc-key property of this point
-                return this.point["hc-key"];
+                return this.point['hc-key'];
               }
             }
           }
@@ -78,19 +78,19 @@ angular
     $scope.gridOptions = {
       columnDefs: [
         {
-          name: "Severity",
+          name: 'Severity',
           filter: {
             type: uiGridConstants.filter.SELECT,
             selectOptions: [
-              { value: "Low", label: "Low" },
-              { value: "Medium", label: "Medium" },
-              { value: "High", label: "High" }
+              { value: 'Low', label: 'Low' },
+              { value: 'Medium', label: 'Medium' },
+              { value: 'High', label: 'High' }
             ]
           }
         },
-        { name: "ClientIP", filter: {} },
-        { name: "Protocol", filter: {} },
-        { name: "ClientCountry", filter: {} }
+        { name: 'ClientIP', filter: {} },
+        { name: 'Protocol', filter: {} },
+        { name: 'ClientCountry', filter: {} }
       ],
 
       enableFiltering: true,

@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * @ngdoc function
@@ -6,7 +6,7 @@
  * @description
  * Servics that fetchs the cards
  */
-angular.module("demoApp").service("Cards", function($timeout) {
+angular.module('demoApp').service('Cards', function($timeout) {
   var self = this;
   var things = [...new Array(12).keys()];
   const cardDown = false;
@@ -84,7 +84,7 @@ angular.module("demoApp").service("Cards", function($timeout) {
     }
 
     if (things.length === thingsTheUserGotRight.length) {
-      window.alert("You Won!");
+      window.alert('You Won!');
     }
   }
   function userSelectedTheRightOnes() {

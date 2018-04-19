@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * @ngdoc function
@@ -7,4 +7,4 @@
  * # GameCtrl
  * GameCtrl of the demoApp
  */
-angular.module("demoApp").controller("GameCtrl", function() {});
+angular.module('demoApp').controller('GameCtrl', function() {});
