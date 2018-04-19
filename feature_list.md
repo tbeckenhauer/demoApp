@@ -32,6 +32,8 @@ Completed
 - Rename app module to DemoApp
 
 To Be Completed
+- fix failing jscs
+- add jscs to run on the normal build process
 - install html preprocessor so templateUrls are loaded beforehand
   - https://github.com/karma-runner/karma-ng-html2js-preprocessor
   - unit testing difficult with http requests being fired for html documents
