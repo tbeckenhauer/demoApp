@@ -30,10 +30,11 @@ Completed
   - Find out why unit tests are broken.
 - Break main.scss into modules & pages
 - Rename app module to DemoApp
+- fix failing jscs
 
 To Be Completed
-- fix failing jscs
 - add jscs to run on the normal build process
+- add jquery to testing framework because click is not included
 - install html preprocessor so templateUrls are loaded beforehand
   - https://github.com/karma-runner/karma-ng-html2js-preprocessor
   - unit testing difficult with http requests being fired for html documents
