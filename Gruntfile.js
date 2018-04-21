@@ -453,6 +453,10 @@ module.exports = function (grunt) {
     karma: {
       unit: {
         configFile: 'karma.conf.js',
+        singleRun: true
+      },
+      ci: {
+        configFile: 'karma.conf.js',
         singleRun: false
       }
     }
@@ -474,18 +478,22 @@ module.exports = function (grunt) {
     ]);
   });
 
-  grunt.registerTask('server', 'DEPRECATED TASK. Use the "serve" task instead', function (target) {
-    grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
-    grunt.task.run(['serve:' + target]);
-  });
-
-  grunt.registerTask('test', [
+  grunt.registerTask('setuptest', [
     'clean:server',
     'wiredep',
     'concurrent:test',
     'postcss',
-    'connect:test',
-    'karma'
+    'connect:test'
+  ]);
+
+  grunt.registerTask('ci', [
+    'setuptest',
+    'karma:ci'
+  ]);
+
+  grunt.registerTask('unit', [
+    'setuptest',
+    'karma:unit'
   ]);
 
   grunt.registerTask('build', [
