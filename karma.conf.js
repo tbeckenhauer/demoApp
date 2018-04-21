@@ -22,7 +22,6 @@ module.exports = function(config) {
       // bower:js
       'bower_components/jquery/dist/jquery.js',
       'bower_components/angular/angular.js',
-      'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
       'bower_components/angular-animate/angular-animate.js',
       'bower_components/angular-cookies/angular-cookies.js',
       'bower_components/angular-resource/angular-resource.js',
@@ -30,10 +29,12 @@ module.exports = function(config) {
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/angular-touch/angular-touch.js',
       'bower_components/angular-mocks/angular-mocks.js',
-      'bower_components/knuth-shuffle/index.js',
       'bower_components/angular-ui-grid/ui-grid.js',
+      'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
       'bower_components/highcharts/highmaps.js',
       'bower_components/highmaps-map-collection/mapdata/custom/world/world.js',
+      'bower_components/knuth-shuffle/index.js',
+      'bower_components/lodash/lodash.js',
       // endbower
       'app/index.js',
       'app/**/*.js',

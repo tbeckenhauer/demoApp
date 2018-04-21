@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "dependencies": {
     "angular": "1.6.x",
-    "bootstrap-sass-official": "^3.2.0",
     "angular-animate": "1.6.x",
     "angular-cookies": "1.6.x",
     "angular-resource": "1.6.x",
@@ -11,10 +10,12 @@
     "angular-sanitize": "1.6.x",
     "angular-touch": "1.6.x",
     "angular-mocks": "1.6.x",
-    "knuth-shuffle": "1.0.x",
     "angular-ui-grid": "4.4.x",
+    "bootstrap-sass-official": "^3.2.0",
     "highcharts": "6.0.x",
-    "highmaps-map-collection": "https://github.com/doshprompt/highmaps-map-collection.git"
+    "highmaps-map-collection": "https://github.com/doshprompt/highmaps-map-collection.git",
+    "knuth-shuffle": "1.0.x",
+    "lodash": "4.x.x"
   },
   "appPath": "app",
   "moduleName": "demoApp",
