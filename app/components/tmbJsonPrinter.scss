@@ -1,0 +1,12 @@
+.tmbJsonPrinter {
+    li {
+      list-style: none;
+      white-space: nowrap;
+    }
+    dt, dd {
+        display: inline;
+    }
+    ul, ol {
+      padding: 20;
+    }
+}
