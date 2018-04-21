@@ -7,7 +7,7 @@
  * Servics that fetchs the alerts
  */
 angular.module('demoApp').service('Alerts', function($http) {
-  return $http.get('models/alerts.json').then(
+  return $http.get('models/Alerts.json').then(
     response => {
       return {
         data: response.data,
