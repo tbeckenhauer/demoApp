@@ -31,16 +31,20 @@ Completed
 - Break main.scss into modules & pages
 - Rename app module to DemoApp
 - fix failing jscs
+- add jquery to testing framework because click is not included
+- Move Highcharts and Shuffle into a dependency path.
+- node_modules update broke build
 
 To Be Completed
+- switch to es6 modules
+    - remove bower
+    - fix grunt build process to automatically concat and wire dependencies
+- Google analytics
 - add jscs to run on the normal build process
-- add jquery to testing framework because click is not included
 - install html preprocessor so templateUrls are loaded beforehand
   - https://github.com/karma-runner/karma-ng-html2js-preprocessor
   - unit testing difficult with http requests being fired for html documents
-- fix grunt build process to automatically concat and wire dependencies
 - cleanup cards logic
-- Move Highcharts and Shuffle into a dependency path.
 - Use semantic nav tags for header, footer, section, and navigation
 - Move view logic in AlertsCtrl into a list/details directive
 - Refactor out the Counter logic to make a general purpose counter.
@@ -48,4 +52,3 @@ To Be Completed
 - restore <!-- TODO <li class="active"></li> -->
 - Refactor Cards Service.
   - CardFactory and CardList
-- Google analytics
