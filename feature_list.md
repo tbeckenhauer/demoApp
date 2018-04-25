@@ -1,5 +1,7 @@
 To Be Completed
 - move mvp-statemachine into this project
+- add these dependencies
+- switch over to es6 modules
 - install html preprocessor so templateUrls are loaded beforehand
   - https://github.com/karma-runner/karma-ng-html2js-preprocessor
   - unit testing difficult with http requests being fired for html documents

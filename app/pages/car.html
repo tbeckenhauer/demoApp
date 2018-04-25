@@ -1,0 +1,12 @@
+        <tmb-dropdown
+                label="Interior"
+                current-option="selectedUistyle"
+                on-change="updateUiStyle(id, name)"
+                options="possibleUistyles"></tmb-dropdown>
+        <tmb-dashboard>
+            <tmb-dashboard-button cmd-val="Insert Keys" exec-cmd="acceptCommand('startEngine')"></tmb-dashboard-button>
+            <tmb-dashboard-button cmd-val="Remove Keys" exec-cmd="acceptCommand('turnOffEngine')"></tmb-dashboard-button>
+            <tmb-dashboard-button cmd-val="Accelerate" exec-cmd="acceptCommand('pushForward')"></tmb-dashboard-button>
+            <tmb-dashboard-button cmd-val="Decelerate" exec-cmd="acceptCommand('pullBack')"></tmb-dashboard-button>
+        </tmb-dashboard>
+        <tmb-messages class="scrolling" msg-array="messageArray"></tmb-messages>

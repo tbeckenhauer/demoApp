@@ -1,0 +1,38 @@
+<ng-switch on="uistyle">
+    <md-input-container ng-show="uistyle == 'material'">
+        <label>{{label}}:</label>
+        <md-select ng-model="currentOption">
+            <md-option ng-repeat="mOption in options"
+                       ng-value="mOption"
+                       ng-selected="mOption.id == currentOption.id"
+                       ng-click="onChange( mOption )">
+                {{mOption.name}}
+            </md-option>
+        </md-select>
+    </md-input-container>
+
+    <div ng-show="uistyle == 'bootstrap'" class="dropdown">
+        <button class="btn btn-default dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="true">
+            {{label}}: {{currentOption.name}}
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li ng-repeat="bOption in options">
+                <a ng-click="onChange( bOption )">{{bOption.name}}</a>
+            </li>
+        </ul>
+    </div>
+
+    <label ng-show="uistyle == 'html5'" style="display:block">
+        {{label}}:
+        <select
+                ng-model="currentOption"
+                ng-change="onChange( currentOption )"
+                ng-options="option.name for option in options">
+        </select>
+    </label>
+</ng-switch>

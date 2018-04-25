@@ -11,11 +11,12 @@
     "angular-touch": "1.6.x",
     "angular-mocks": "1.6.x",
     "angular-ui-grid": "4.4.x",
-    "bootstrap-sass-official": "^3.2.0",
     "highcharts": "6.0.x",
     "highmaps-map-collection": "https://github.com/doshprompt/highmaps-map-collection.git",
     "knuth-shuffle": "1.0.x",
-    "lodash": "4.x.x"
+    "lodash": "4.x.x",
+    "bootstrap": "3.x",
+    "angular-material": "1.1.0"
   },
   "appPath": "app",
   "moduleName": "demoApp",
@@ -31,14 +32,13 @@
     },
     "bootstrap": {
       "main": [
-        "less/bootstrap.less",
         "dist/css/bootstrap.css",
         "dist/js/bootstrap.js"
       ]
     },
     "angular": {
       "dependencies": {
-          "jquery": "x"
+        "jquery": "x"
       }
     }
   }

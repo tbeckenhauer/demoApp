@@ -14,6 +14,10 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
+
+    'ngMaterial',
+    'ngMessages',
+
     'ui.grid',
     'ui.grid.expandable',
     'ui.grid.selection',
@@ -30,6 +34,11 @@ angular
         template: '<tmb-playmat></tmb-playmat>',
         controller: 'GameCtrl',
         controllerAs: 'game'
+      })
+      .when('/statemachine', {
+        templateUrl: 'pages/car.html',
+        controller: 'carController',
+        controllerAs: 'car'
       })
       .when('/',{
         redirectTo: '/game'
