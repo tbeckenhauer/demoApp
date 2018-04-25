@@ -1,20 +1,22 @@
 To Be Completed
-- switch to es6 modules
-    - remove bower
-    - fix grunt build process to automatically concat and wire dependencies
-- Google analytics
-- add jscs to run on the normal build process
+- move mvp-statemachine into this project
 - install html preprocessor so templateUrls are loaded beforehand
   - https://github.com/karma-runner/karma-ng-html2js-preprocessor
   - unit testing difficult with http requests being fired for html documents
 - cleanup cards logic
 - Use semantic nav tags for header, footer, section, and navigation
 - Move view logic in AlertsCtrl into a list/details directive
-- Refactor out the Counter logic to make a general purpose counter.
-- Pagination for the list view
-- restore <!-- TODO <li class="active"></li> -->
 - Refactor Cards Service.
   - CardFactory and CardList
+- Refactor out the Counter logic to make a general purpose counter.
+- Merge with other demoApplications
+- switch to es6 modules
+    - remove bower
+    - fix grunt build process to automatically concat and wire dependencies
+- Google analytics
+- add jscs to run on the normal build process
+- Pagination for the list view
+- restore <!-- TODO <li class="active"></li> -->
 
 Completed
 - node_modules update broke build

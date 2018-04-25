@@ -19,6 +19,7 @@ angular.module('demoApp').directive('tmbJsonPrinter', function(Cards, Shuffle, L
         template: '<data class="tmbJsonPrinter"></data>',
         link: function (scope, element, attrs, controller, transcludeFn) {
             scope.$watch('obj', function() {
+                //TODO: A Promise would be better
                 attachObjToElement(element, 'obj', scope.obj);
             });
 
