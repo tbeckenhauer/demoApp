@@ -1,0 +1,43 @@
+.tmbCard {
+  font-size: 4em;
+  text-align: center;
+  margin: 9px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px; }
+  .tmbCard.wrong {
+    background-color: red; }
+  .tmbCard.right .faceup {
+    border: solid 9px limegreen; }
+  .tmbCard input[type=checkbox] {
+    display: none; }
+  .tmbCard div {
+    border: 6px solid white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .tmbCard .faceup {
+    background-color: white; }
+  .tmbCard .facedown {
+    background-color: skyblue; }
+
+[style^='--aspect-ratio']::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 0;
+  padding-bottom: calc(100% / (var(--aspect-ratio))); }
+
+.slide.ng-enter {
+  transition: 0.6s linear all;
+  animation-timing-function: ease-in;
+  transform: perspective(400px) rotate3d(0, 1, 0, 90deg); }
+
+.slide.ng-enter.ng-enter-active {
+  transform: perspective(400px); }
+
+/*# sourceMappingURL=tmbCard.css.map */

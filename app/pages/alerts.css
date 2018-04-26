@@ -1,0 +1,20 @@
+#mapcontainer {
+  height: 300px;
+  min-width: 210px;
+  max-width: 400px;
+  margin: 0 auto; }
+
+.alertspage {
+  display: flex;
+  flex-direction: row; }
+  .alertspage .filters {
+    flex-grow: 1; }
+    .alertspage .filters li {
+      list-style: none;
+      white-space: nowrap; }
+    .alertspage .filters ul, .alertspage .filters ol {
+      padding: 20; }
+  .alertspage .grid {
+    flex-grow: 3; }
+
+/*# sourceMappingURL=alerts.css.map */
