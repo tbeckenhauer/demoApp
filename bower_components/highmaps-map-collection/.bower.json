@@ -1,0 +1,13 @@
+{
+  "name": "highmaps-map-collection",
+  "homepage": "https://github.com/doshprompt/highmaps-map-collection",
+  "_release": "06a7b4de5b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "06a7b4de5b2a9043e7e79389b3ccc3666fd45633"
+  },
+  "_source": "https://github.com/doshprompt/highmaps-map-collection.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/doshprompt/highmaps-map-collection.git"
+}
